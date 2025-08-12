@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قناع سبايدر مان بعيون LED</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 0;
+        }
+        header img.hero {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 32px;
+            color: #222;
+        }
+        header p.tagline {
+            margin: 0 0 20px;
+            font-size: 18px;
+            color: #555;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .features ul {
+            padding: 0;
+            list-style: none;
+        }
+        .features li {
+            padding-left: 1.2em;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .features li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+        }
+        .description img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .description .caption {
+            font-size: 14px;
+            color: #666;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form.order-form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-top: 30px;
+        }
+        form.order-form h2 {
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        form.order-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        form.order-form input[type="text"],
+        form.order-form input[type="tel"],
+        form.order-form select,
+        form.order-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        form.order-form textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+        form.order-form button {
+            display: block;
+            width: 100%;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form.order-form button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #111;
+            color: #ddd;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        /* responsive */
+        @media (max-width: 600px) {
+            header h1 { font-size: 28px; }
+            header p.tagline { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- صورة الهيرو الرئيسية للمنتج -->
+        <img src="hero.jpeg" alt="قناع سبايدر مان بعيون LED" class="hero">
+        <h1>قناع سبايدر مان بعيون LED</h1>
+        <p class="tagline">تحوّل إلى سبايدر مان مع قناع LED واقعي ومريح</p>
+    </header>
+
+    <div class="container">
+        <section class="features">
+            <h2>لماذا تختار قناع سبايدر مان بعيون LED؟</h2>
+            <ul>
+                <li>إضاءة LED متعددة الألوان للعيون تمنحك مظهرًا واقعيًا ومذهلاً.</li>
+                <li>مصنوع من مواد عالية الجودة قابلة للتمدد توفر الراحة أثناء الارتداء.</li>
+                <li>تصميم تفصيلي مستوحى من الأفلام يجعل القناع مثاليًا لمحبي الأبطال الخارقين.</li>
+                <li>مناسب لجميع الأعمار والمقاسات مع إمكانية تعديل المقاس بسهولة.</li>
+                <li>مثالي للحفلات التنكرية، الهالوين، جلسات التصوير والهدايا.</li>
+            </ul>
+        </section>
+
+        <section class="description">
+            <p>
+                هذا القناع الفريد من نوعه مصمم لمحبي سبايدر مان وكل عشاق الأبطال الخارقين. يأتي بإضاءة LED داخلية يمكن تشغيلها لتضيء العينين بألوان متعددة، مما يضفي لمسة واقعية ومبهرة على إطلالتك.
+            </p>
+            <p>
+                يمتاز القناع بخامة مرنة ومريحة تسمح بارتدائه لفترات طويلة دون أي إزعاج. كما أن التصميم التفصيلي والدقيق يجعله أشبه تمامًا بالقناع الذي يظهر في الأفلام، وهو ما يجعله مناسبًا لكل من المجموعات التنكرية والفعاليات الخاصة.
+            </p>
+            <!-- صور الوصف والعناوين التوضيحية -->
+            <img src="img1.jpeg" alt="تصميم واقعي بعيون قابلة للتبديل">
+            <div class="caption">تصميم واقعي بعيون قابلة للتبديل</div>
+            <img src="img2.jpeg" alt="عيون LED قابلة للإضاءة بألوان مختلفة">
+            <div class="caption">عيون LED قابلة للإضاءة بألوان مختلفة</div>
+            <img src="img3.jpeg" alt="قناع مع عبوة فاخر – مثالي للهدايا">
+            <div class="caption">قناع مع عبوة فاخر – مثالي للهدايا</div>
+        </section>
+
+        <!-- نموذج الطلب يستخدم FormSubmit لإرسال البيانات مباشرة إلى البريد الإلكتروني -->
+        <form class="order-form" id="orderForm"
+              action="https://formsubmit.co/mohammad.ssataali@gmail.com" method="POST"
+              onsubmit="return prepareForm();">
+            <h2>اطلب الآن</h2>
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" pattern="[0-9+\s-]{7,}" required>
+
+            <label for="city">اختر المنطقة</label>
+            <select id="city" name="city" required>
+                <option value="">اختر المنطقة...</option>
+                <option value="القدس">القدس</option>
+                <option value="الداخل">الداخل</option>
+                <option value="الضفة الغربية">الضفة الغربية</option>
+            </select>
+
+            <label for="address">العنوان التفصيلي</label>
+            <textarea id="address" name="address" placeholder="أدخل عنوانك بالتفصيل (مثال: شارع، رقم المبنى، منطقة)" required></textarea>
+
+            <label for="qty">الكمية</label>
+            <select id="qty" name="qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <!-- حقول مخفية لإرسال بيانات إضافية -->
+            <input type="hidden" id="unitPriceField" name="unit_price" value="">
+            <input type="hidden" id="totalPriceField" name="total_price" value="">
+            <input type="hidden" name="product" value="قناع سبايدر مان بعيون LED">
+            <input type="hidden" name="_subject" value="طلب شراء قناع سبايدر مان">
+            <input type="hidden" name="_autoresponse" value="شكرًا لطلبك! سنقوم بالتواصل معك لتأكيد تفاصيل الطلب والتوصيل.">
+
+            <button type="submit">اطلب الآن</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة - متجر ATAHub</p>
+    </footer>
+
+    <script>
+        // السعر للقطعة (يمكن تغيير القيمة)
+        const UNIT_PRICE = 149;
+
+        /**
+         * تُحضّر الحقول المخفية قبل إرسال النموذج. تُحسب الكمية والإجمالي وتُضاف إلى
+         * الحقول المخفية ليتم إرسالها إلى البريد عبر خدمة FormSubmit.
+         * هذه الدالة تُرجع true للسماح للنموذج بالإرسال.
+         */
+        function prepareForm() {
+            const qty = parseInt(document.getElementById('qty').value, 10) || 1;
+            const totalPrice = UNIT_PRICE * qty;
+            document.getElementById('unitPriceField').value = UNIT_PRICE;
+            document.getElementById('totalPriceField').value = totalPrice;
+            return true;
+        }
+    </script>
+</body>
+</html>
