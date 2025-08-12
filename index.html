@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>قناع سبايدر مان بعيون LED</title>
+    <!-- كود بكسل تيك توك لقياس زيارات وتحويلات صفحة الهبوط -->
+    <script>
+    !function (w,d,t) {
+      w.TiktokAnalyticsObject=t;
+      var ttq=w[t]=w[t]||[];
+      ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","pageview"];
+      ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments)))} };
+      for(var i=0;i<ttq.methods.length;i++){ttq.setAndDefer(ttq,ttq.methods[i]);}
+      ttq.load=function(e,n){
+        var i='https://analytics.tiktok.com/i18n/pixel/events.js';
+        ttq._i=ttq._i||{};
+        ttq._i[e]=[];
+        ttq._i[e]._u=i;
+        ttq._t=ttq._t||{};
+        ttq._t[e]=+new Date;
+        ttq._o=ttq._o||{};
+        ttq._o[e]=n||{};
+        var o=d.createElement('script');
+        o.type='text/javascript';
+        o.async=true;
+        o.src=i+'?sdkid='+e+'&lib='+t;
+        var a=d.getElementsByTagName('script')[0];
+        a.parentNode.insertBefore(o,a);
+      };
+    }(window,document,'ttq');
+    // تحميل البكسل بمعرّف البكسل الخاص
+    ttq.load('D2DQBKBC77UCRM9QIKGG');
+    ttq.page();
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -152,19 +181,26 @@
         </section>
 
         <section class="description">
+            <!-- نبدأ بفقرة أولى متبوعة بصورة توضيحية -->
             <p>
                 هذا القناع الفريد من نوعه مصمم لمحبي سبايدر مان وكل عشاق الأبطال الخارقين. يأتي بإضاءة LED داخلية يمكن تشغيلها لتضيء العينين بألوان متعددة، مما يضفي لمسة واقعية ومبهرة على إطلالتك.
             </p>
+            <img src="img1.jpeg" alt="تصميم واقعي بعيون قابلة للتبديل">
+            <div class="caption">تصميم واقعي بعيون قابلة للتبديل</div>
+
+            <!-- فقرة ثانية مع صورة ثانية بين النصوص -->
             <p>
                 يمتاز القناع بخامة مرنة ومريحة تسمح بارتدائه لفترات طويلة دون أي إزعاج. كما أن التصميم التفصيلي والدقيق يجعله أشبه تمامًا بالقناع الذي يظهر في الأفلام، وهو ما يجعله مناسبًا لكل من المجموعات التنكرية والفعاليات الخاصة.
             </p>
-            <!-- صور الوصف والعناوين التوضيحية -->
-            <img src="img1.jpeg" alt="تصميم واقعي بعيون قابلة للتبديل">
-            <div class="caption">تصميم واقعي بعيون قابلة للتبديل</div>
             <img src="img2.jpeg" alt="عيون LED قابلة للإضاءة بألوان مختلفة">
             <div class="caption">عيون LED قابلة للإضاءة بألوان مختلفة</div>
+
+            <!-- فقرة ثالثة مع صورة ثالثة مدمجة داخل النص -->
+            <p>
+                يأتي القناع في عبوة فاخرة مع عيون قابلة للتبديل، مما يجعله خيارًا مثاليًا للهدايا أو لمحبي جمع التذكارات. ستسعد بالحصول على منتج عالي الجودة يجمع بين الإبداع والتميز.
+            </p>
             <img src="img3.jpeg" alt="قناع مع عبوة فاخر – مثالي للهدايا">
-            <div class="caption">قناع مع عبوة فاخر – مثالي للهدايا</div>
+            <div class="caption">قناع مع عبوة فاخرة – مثالي للهدايا</div>
         </section>
 
         <!-- نموذج الطلب يستخدم FormSubmit لإرسال البيانات مباشرة إلى البريد الإلكتروني -->
@@ -224,6 +260,18 @@
             const totalPrice = UNIT_PRICE * qty;
             document.getElementById('unitPriceField').value = UNIT_PRICE;
             document.getElementById('totalPriceField').value = totalPrice;
+            // إرسال حدث Lead إلى بكسل تيك توك عند تقديم الطلب
+            if (typeof ttq !== 'undefined' && typeof ttq.track === 'function') {
+                ttq.track('Lead', {
+                    value: totalPrice,
+                    currency: 'ILS',
+                    contents: [{
+                        content_name: 'قناع سبايدر مان بعيون LED',
+                        content_type: 'product',
+                        quantity: qty
+                    }]
+                });
+            }
             return true;
         }
     </script>
